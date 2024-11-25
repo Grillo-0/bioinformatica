@@ -1,0 +1,22 @@
+O que foi feito ate agr
+
+Baixados e filtrados os datasets
+Ta tudo na pasta data
+data/raw_gff3 -> arquivos .gff3 baixados da database
+data/chromossomes -> nao cheguei a usar
+data/positive_csv -> csv com as referencias para as sequencias de strand positiva
+data/dataset -> .csv com 2000 sequencias de cada classe
+data/dataset_500 -> mesma coisa mas com menos
+data/<feature>_data -> .csv com as features extraidas com o metodo do nome (Entropy, FS = Fickett Score)
+data/classification -> .csv com os dados prontos pro classificador
+data/temp_fasta -> temp pros arquivos fasta de input do extrator de feature
+data/visualization -> tava usando pra plotar e testar algumas features
+
+
+No notebook ta feito tudo q eu fiz basicamente, pode so acabar n funcionando algo pq no meu eu rodei 
+nuns scripts separados, vai q da BO 
+
+Unica coisa q eu fiquei meio na duvida:
+Comecei usando SVM de classificador, rodei grid search p fine tune e ai ele tava dando
+100% de precisao, e precision/recall tava um quadrado, ai eu fiquei com pe atras pq tava estranho.
+Ai botei um LDA p "emburrecer" um pouco e ta com uma curva mais normal
